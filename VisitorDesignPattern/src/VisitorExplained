@@ -1,0 +1,19 @@
+Real life scenario:
+
+	We have a man that wants to buy a list of things:
+-1)a shampoo
+-2)a parfume
+-3)a bottle of wine
+-4)a bread
+	This list can be seen as CLIENT in the diagram, each object being a concrete element.
+
+	This man wants to use an app that's called BUY_EVERITHING, that takes care of buying the right things for him, at the best price, from 
+different stores.
+	This can be seen as the visitor in the UML diagram.
+	
+	Keep in mind that a simple arrow means a dependency, an object can have a method that gets that paramaeter.
+	
+	So, this design pattern is good when we want to implement a decoupled part of app, without modifying existing code.
+	In our case, we could have a method in each class that takes care of buying the things, but it's not the right way
+	because we would not respect the single responsibility principle
+	
