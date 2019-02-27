@@ -1,0 +1,14 @@
+
+The adapter design pattern is useful when you need to integrate 2 complex apps together, for example.
+It can be of two types:
+-1)Class
+-2)Interfaces
+
+Example of scenario:
+	We have a video streaming. The old format of videos is changed with another one. We have to take care of this problem 
+	without modifying existing code.
+	
+	As a consequence, we have to implement the new interface of the used class. 
+	The newly created class will have an object of the old type. 
+	
+	If we are talking about Interface adapter, we have to implement both of the interfaces.
