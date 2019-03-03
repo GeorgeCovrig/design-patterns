@@ -3,24 +3,24 @@ package observable;
 import java.util.ArrayList;
 import java.util.List;
 
-import observer.InterfaceObserver;
+import observer.InterfaceObserverGenerics;
 
 public class ProgrammingNewsSite implements InterfaceObservable {
-	List<InterfaceObserver> subscribersList = new ArrayList<InterfaceObserver>();
+	List<InterfaceObserverGenerics> subscribersList = new ArrayList<InterfaceObserverGenerics>();
 
 	@Override
-	public void registerObserver(InterfaceObserver observer) {
+	public void registerObserver(InterfaceObserverGenerics observer) {
 		subscribersList.add(observer);
 	}
 
 	@Override
-	public void removeObserver(InterfaceObserver observer) {
+	public void removeObserver(InterfaceObserverGenerics observer) {
 		subscribersList.remove(observer);
 	}
 
 	@Override
 	public void notifyObservers(String subject) {
-		for (InterfaceObserver observer : subscribersList) {
+		for (InterfaceObserverGenerics observer : subscribersList) {
 			observer.update(subject, this.getClass().getSimpleName());
 		}
 	}

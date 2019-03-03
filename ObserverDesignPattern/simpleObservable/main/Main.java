@@ -1,20 +1,20 @@
 package main;
 
-import observable.ProgrammingNewsSite;
-import observable.SportMagazineObservable;
-import observer.Person;
+import observable.ProgrammingNewsSiteGenerics;
+import observable.SportMagazineObservableGenerics;
+import observer.PersonGenerics;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// observer creation
-		Person john = new Person("John");
-		Person maria = new Person("Maria");
-		Person iohan = new Person("Iohan");
+		PersonGenerics john = new PersonGenerics("John");
+		PersonGenerics maria = new PersonGenerics("Maria");
+		PersonGenerics iohan = new PersonGenerics("Iohan");
 
 		// observable creation
-		SportMagazineObservable sportMagazineObservable = new SportMagazineObservable();
-		ProgrammingNewsSite programmingNewsSite = new ProgrammingNewsSite();
+		SportMagazineObservableGenerics sportMagazineObservable = new SportMagazineObservableGenerics();
+		ProgrammingNewsSiteGenerics programmingNewsSite = new ProgrammingNewsSiteGenerics();
 
 		// John and Maria are subscribing to sportMagazine
 		// Iohan is subscribing to programming site
