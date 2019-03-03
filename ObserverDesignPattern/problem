@@ -1,0 +1,9 @@
+
+
+Let's imagine the way mailing works. We can subscribe to different sites.
+This pattern has two main sides: the observer and the observable.
+
+The 0bserver is the one that waits for the data, in our case the person that subscribes to a site.
+The Observable is the site that sends the data.
+
+We will implement this design pattern in the simplest way, and then using Generics.
